@@ -1,11 +1,11 @@
-require("./Models/User");
-require("./Models/Track");
+require("./src/Models/User");
+require("./src/Models/Track");
 const express = require("express");
 const mongoose = require("mongoose");
-const authRoutes = require("./routes/authRoutes");
-const trackRoutes = require("./routes/trackRoutes");
+const authRoutes = require("./src/routes/authRoutes");
+const trackRoutes = require("./src/routes/trackRoutes");
 const bodyParser = require("body-parser");
-const requireAuth = require("./middlewares/requireAuth");
+const requireAuth = require("./src/middlewares/requireAuth");
 
 const app = express();
 
